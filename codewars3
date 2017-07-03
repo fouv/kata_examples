@@ -1,0 +1,15 @@
+<?php
+$array = ["head","body","tail","heads","tails","top","middle","bottom","upper legs", "torso","lower legs","sky","rainbow","ground"];
+$find = ["head","body","tail"];
+$find1 = ["heads","body","tails"];
+$find2 = ["top","middle","bottom"];
+$find3 = ["upper legs","torso","lower legs"];
+$find4 = ["sky", "rainbow","ground"];
+$matchFound =preg_match_all("/\b(" . implode($array,"|") . ")\b/i", $find, $matches);
+
+if ($matchFound) {
+return $find;
+}
+else {
+echo "your string is okay";
+}

@@ -1,0 +1,7 @@
+<?php
+$goose = 4;
+$players = ["André", "Beatrice", "Christina", "Daniel"];
+$key = $goose - 1;
+$reste = $key % 4;
+$solution = $players[$reste];
+print_r($solution) ;
